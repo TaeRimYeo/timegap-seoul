@@ -1,0 +1,18 @@
+{
+ "cells": 1312,
+ "cng_neg": 1312,
+ "drt_pos": 140,
+ "drt_pos_night": 28,
+ "night_cells": 486,
+ "breakeven_med_all": 0.1100877860812981,
+ "breakeven_med_night": 0.080101235988878,
+ "breakeven_med_day": 0.13141834140561987,
+ "breakeven_max": 0.962313931258578,
+ "breakeven_p90": 0.3098414030233228,
+ "cng_kg_per_added_run_med": -2.3660243135672023,
+ "drt_kg_per_added_run_med": -0.1625092611575923,
+ "drt_kg_per_added_run_night_med": -0.18816573252854274,
+ "avoided_t_all": 10687.218438137377,
+ "add_runs_yr_all": 80138916.28744663,
+ "bus_t_cng_all": 197158.99171452184
+}

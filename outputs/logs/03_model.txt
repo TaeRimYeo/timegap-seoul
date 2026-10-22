@@ -1,0 +1,5 @@
+M1 기본 (S_o+S_d | od + tbin^daytype) N=1277629 {np.str_('S_o'): {'Estimate': -0.0342, 'Std. Error': 0.0087, 'Pr(>|t|)': 0.0001}, np.str_('S_d'): {'Estimate': -0.0139, 'Std. Error': 0.005, 'Pr(>|t|)': 0.0053}} 5s
+M2 버스만 (Sbus_o+Sbus_d) N=1277629 {np.str_('Sbus_o'): {'Estimate': -0.0312, 'Std. Error': 0.0087, 'Pr(>|t|)': 0.0004}, np.str_('Sbus_d'): {'Estimate': -0.0065, 'Std. Error': 0.0042, 'Pr(>|t|)': 0.1264}} 7s
+M3 심야 제외(05-22) N=993327 {np.str_('S_o'): {'Estimate': -0.0012, 'Std. Error': 0.0145, 'Pr(>|t|)': 0.9324}, np.str_('S_d'): {'Estimate': 0.0107, 'Std. Error': 0.0049, 'Pr(>|t|)': 0.031}} 8s
+M4 주말만 N=621696 {np.str_('S_o'): {'Estimate': -0.0473, 'Std. Error': 0.0115, 'Pr(>|t|)': 0.0}, np.str_('S_d'): {'Estimate': -0.024, 'Std. Error': 0.0062, 'Pr(>|t|)': 0.0001}} 9s
+M5 평일만 N=655932 {np.str_('S_o'): {'Estimate': -0.0172, 'Std. Error': 0.0087, 'Pr(>|t|)': 0.0499}, np.str_('S_d'): {'Estimate': -0.0095, 'Std. Error': 0.0048, 'Pr(>|t|)': 0.0472}} 10s

@@ -1,0 +1,21 @@
+# 원자료·중간 산출물(용량·재배포 조건) — data/README.md의 방법으로 받는다
+data/raw/
+data/external/
+data/interim/
+# 저장소에 올리지 않는 작업 문서
+사람이_할일.md
+review/
+PROJECT_SPEC.md
+CLAUDE.md
+progress.md
+*참가신청서*
+# 비밀 정보
+.env
+*.key
+# 기타
+__pycache__/
+*.pyc
+report/png/
+*.tmp
+~$*
+.ipynb_checkpoints/

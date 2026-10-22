@@ -1,0 +1,447 @@
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25995 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 23 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 3 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 5018 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25192 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26712 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26012 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26283 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+                                   model       var  Estimate  Std. Error  Pr(>|t|)    2.5%   97.5%
+0  B4 시간대별 β, 시간대 안 변동만 (od×시간대 + 구간×요일)  So_night   -0.0799      0.0185    0.0000 -0.1163 -0.0436
+1  B4 시간대별 β, 시간대 안 변동만 (od×시간대 + 구간×요일)  Sd_night   -0.0049      0.0089    0.5827 -0.0224  0.0126
+2  B4 시간대별 β, 시간대 안 변동만 (od×시간대 + 구간×요일)   So_dawn    0.0466      0.0419    0.2674 -0.0358  0.1290
+3  B4 시간대별 β, 시간대 안 변동만 (od×시간대 + 구간×요일)   Sd_dawn   -0.2593      0.0283    0.0000 -0.3148 -0.2037
+4  B4 시간대별 β, 시간대 안 변동만 (od×시간대 + 구간×요일)    So_day    0.0228      0.0202    0.2590 -0.0169  0.0626
+5  B4 시간대별 β, 시간대 안 변동만 (od×시간대 + 구간×요일)    Sd_day    0.0318      0.0064    0.0000  0.0192  0.0444
+0                   B5 주간 세부(peak) 안 변동만       S_o    0.0041      0.0411    0.9198 -0.0767  0.0850
+1                   B5 주간 세부(peak) 안 변동만       S_d    0.0224      0.0104    0.0327  0.0019  0.0429
+0                    B5 주간 세부(mid) 안 변동만       S_o    0.0277      0.0222    0.2123 -0.0159  0.0713
+1                    B5 주간 세부(mid) 안 변동만       S_d    0.0300      0.0103    0.0038  0.0097  0.0503
+0                    B5 주간 세부(eve) 안 변동만       S_o   -0.2195      0.0659    0.0009 -0.3491 -0.0900
+1                    B5 주간 세부(eve) 안 변동만       S_d    0.0661      0.0235    0.0050  0.0200  0.1122
+             band        y    coef      se       p      lo      hi      n
+0              전체  log_car -0.0041  0.0366  0.9108 -0.0761  0.0679  20496
+1        주간 07–22  log_car -0.0134  0.0376  0.7216 -0.0873  0.0605  12810
+2  평일 낮 비첨두 09–16  log_car -0.0910  0.0417  0.0297 -0.1730 -0.0090   5124
+3  첨두 07–09·16–19  log_car  0.0041  0.0449  0.9265 -0.0840  0.0923   5124
+4     심야·새벽 22–07  log_car  0.0588  0.0595  0.3236 -0.0582  0.1758   7686
+1
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25660 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26351 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26781 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26022 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25915 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25517 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26400 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26291 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25671 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25511 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25675 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26360 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25990 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26372 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26044 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26131 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25802 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25595 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26687 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25964 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+21
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26138 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25911 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26608 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26403 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25369 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26672 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25631 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25754 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26416 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26741 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25779 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26392 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26003 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26079 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26213 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26389 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26624 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25539 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27009 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+41
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25475 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25016 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26156 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25539 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27022 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25401 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25836 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25519 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27167 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26036 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27395 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26740 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25814 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26065 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26160 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25709 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25748 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26357 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+61
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 24903 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27178 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27305 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27195 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26365 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25946 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25952 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26763 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26149 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25709 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25676 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26169 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26192 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25066 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25269 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26397 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26242 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25151 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25534 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25760 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+81
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26367 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26687 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26256 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26760 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26600 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25833 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25484 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26070 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26672 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27254 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25687 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25576 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26501 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25856 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25964 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25906 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25657 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26363 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 24452 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25453 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+101
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26202 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26076 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26289 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26367 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25685 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26213 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 24932 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26043 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25744 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25533 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26245 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26158 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26119 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26811 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25220 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26212 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25992 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25959 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26121 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26428 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+121
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25715 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25685 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25607 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26343 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26667 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25766 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26976 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26921 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25903 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25872 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25599 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25672 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25561 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26723 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25611 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26543 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27972 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26147 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25680 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26256 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+141
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25978 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26349 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26424 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25653 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25936 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25870 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26104 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27176 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25440 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25578 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26094 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26373 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26581 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26694 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26172 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26212 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26017 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26632 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27121 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25972 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26603 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+161
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25934 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26041 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25986 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25665 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25366 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26671 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25899 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25198 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26467 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25130 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25071 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26028 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25305 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 24992 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26191 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26405 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25918 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25716 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26242 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26413 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26051 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+181
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25805 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25883 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26016 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26152 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26890 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25430 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26537 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25410 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 27091 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25646 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25950 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26443 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26350 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 25465 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26015 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26659 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 26452 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+200
+       So_night  Sd_night   So_dawn   Sd_dawn    So_day    Sd_day
+count  200.0000  200.0000  200.0000  200.0000  200.0000  200.0000
+mean    -0.0786   -0.0052    0.0488   -0.2575    0.0229    0.0316
+std      0.0192    0.0083    0.0415    0.0278    0.0192    0.0062
+min     -0.1245   -0.0296   -0.0503   -0.3519   -0.0192    0.0163
+2.5%    -0.1164   -0.0188   -0.0371   -0.3075   -0.0120    0.0203
+50%     -0.0780   -0.0055    0.0492   -0.2586    0.0247    0.0314
+97.5%   -0.0470    0.0117    0.1274   -0.1999    0.0632    0.0448
+max     -0.0209    0.0145    0.1476   -0.1918    0.0793    0.0479

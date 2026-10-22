@@ -1,0 +1,87 @@
+{
+ "bus_kgco2_per_km_cng": 1.1999166666666667,
+ "params": {
+  "car_gco2_per_km": 125.2,
+  "circuity": 1.296,
+  "occupancy": 1.4,
+  "ncv_lng_city_gas_MJ_per_Nm3": 38.5,
+  "ncv_gasoline_MJ_per_L": 30.1,
+  "ipcc_cng_kgCO2_per_TJ": 56100,
+  "ipcc_gasoline_kgCO2_per_TJ": 69300,
+  "cng_bus_km_per_m3": 1.8,
+  "grid_tco2_per_mwh": 0.4173,
+  "ebus_kwh_per_km": null,
+  "drt_gco2_per_km": 125.2,
+  "annual_days": null
+ },
+ "headline1": {
+  "낙관": {
+   "t": 40879.83284663508,
+   "ci_lo": 27928.48077525567,
+   "ci_hi": 53905.80550869684
+  },
+  "기본": {
+   "t": 35039.85672568721,
+   "ci_lo": 23938.697807362,
+   "ci_hi": 46204.97615031157
+  },
+  "보수": {
+   "t": 28743.632470290286,
+   "ci_lo": 19637.21304510164,
+   "ci_hi": 37902.51949830246
+  }
+ },
+ "headline1_range": [
+  19637.21304510164,
+  53905.80550869684
+ ],
+ "extra_vehicle_km_base": 279871060.1093228,
+ "share_nonnight": 0.9283674547689613,
+ "share_wk_0916": 0.24006943001307324,
+ "share_weekend": 0.26087782524098735,
+ "share_night": 0.07163254523103879,
+ "bus_km_per_dong_pass": 2.057439540748945,
+ "n_routes_for_km": 1145,
+ "blind_cells": 1296,
+ "neg_cells_cng": 1296,
+ "neg_cells_cng_lo": 1296,
+ "neg_cells_by_tbin": {
+  "we|00-05": 85,
+  "we|05-07": 81,
+  "we|07-09": 77,
+  "we|09-12": 77,
+  "we|12-16": 81,
+  "we|16-19": 77,
+  "we|19-22": 80,
+  "we|22-24": 78,
+  "wk|00-05": 85,
+  "wk|05-07": 83,
+  "wk|07-09": 86,
+  "wk|09-12": 81,
+  "wk|12-16": 83,
+  "wk|16-19": 86,
+  "wk|19-22": 86,
+  "wk|22-24": 70
+ },
+ "neg_cells_night_share": 0.37191358024691357,
+ "topN": 20,
+ "headline2_topN_net_t": {
+  "보수": 0.0,
+  "기본": 0.0,
+  "낙관": 0.0
+ },
+ "headline2_all_pos_net_t": 0.0,
+ "n_pos_cells": 0,
+ "headline3_kg_per_run_topN": NaN,
+ "headline3_kg_per_run_topN_range": [
+  NaN,
+  NaN
+ ],
+ "topN_add_runs_yr": 0.0,
+ "topN_bus_km_yr": 0.0,
+ "topN_beneficiary_trips_yr": 0.0,
+ "topN_share_nonnight": NaN,
+ "neg_cells_median_breakeven_kwh_km": 0.13432926659897632,
+ "neg_cells_trips_out_median": 906.01625,
+ "pos_cells_trips_out_median": NaN
+}

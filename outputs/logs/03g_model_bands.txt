@@ -1,0 +1,15 @@
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 76765 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyfixest\estimation\formula\model_matrix.py:151: UserWarning: 18366 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+                      model       var  Estimate  Std. Error  Pr(>|t|)
+0  B1 시간대별 β (od + tbin×요일)  So_night   -0.0302      0.0087    0.0006
+1  B1 시간대별 β (od + tbin×요일)   So_dawn    0.0057      0.0095    0.5537
+2  B1 시간대별 β (od + tbin×요일)    So_day   -0.0414      0.0092    0.0000
+3  B1 시간대별 β (od + tbin×요일)  Sd_night   -0.0013      0.0047    0.7829
+4  B1 시간대별 β (od + tbin×요일)   Sd_dawn   -0.0284      0.0058    0.0000
+5  B1 시간대별 β (od + tbin×요일)    Sd_day   -0.0287      0.0060    0.0000
+6  B2 요일 축만 (od×구간 + 구간×요일)       S_o   -0.0020      0.0162    0.9044
+7  B2 요일 축만 (od×구간 + 구간×요일)       S_d    0.0187      0.0076    0.0140
+8       B3 요일 축, 주간(07–22)만       S_o   -0.0027      0.0176    0.8794
+9       B3 요일 축, 주간(07–22)만       S_d    0.0302      0.0081    0.0002

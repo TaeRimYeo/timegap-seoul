@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>서울 버스시계 T-ART</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data/cells.js"></script>
+<script src="data/dongs.js"></script>
+<style>
+:root{--bg:#fcfcfb;--ink:#222;--muted:#666;--line:#ddd;--accent:#D55E00;--blue:#0072B2;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Malgun Gothic","Noto Sans KR",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:12px 16px;border-bottom:1px solid var(--line)}
+header h1{margin:0;font-size:18px}
+header p{margin:4px 0 0;font-size:12px;color:var(--muted)}
+.wrap{display:grid;grid-template-columns:1fr 340px;height:calc(100vh - 64px)}
+#map{height:100%}
+aside{border-left:1px solid var(--line);padding:12px 14px;overflow:auto;background:var(--card)}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 16px;border-bottom:1px solid var(--line);font-size:13px}
+.seg button{border:1px solid var(--line);background:#fff;padding:4px 10px;cursor:pointer;font:inherit}
+.seg button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+input[type=range]{width:260px}
+.tb{font-weight:bold;min-width:52px;display:inline-block}
+.kpi{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.kpi div{border:1px solid var(--line);padding:8px;border-radius:4px}
+.kpi b{display:block;font-size:20px}
+.kpi span{font-size:11px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:6px}
+td,th{border-bottom:1px solid var(--line);padding:4px;text-align:left}
+td.n{text-align:right}
+.tag{display:inline-block;padding:1px 6px;border-radius:10px;font-size:11px;color:#fff}
+.legend{background:#fff;padding:6px 8px;font-size:11px;border:1px solid var(--line)}
+.legend i{display:inline-block;width:14px;height:10px;margin-right:4px;vertical-align:middle}
+.note{font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5}
+@media (max-width:800px){.wrap{grid-template-columns:1fr;height:auto}#map{height:60vh}aside{border-left:0}}
+</style>
+</head>
+<body>
+<header>
+  <h1>서울 버스시계 <small style="font-weight:normal">T-ART · 시간 축 대중교통 사각지대 조사 보조 도구(행정용 시연판)</small></h1>
+  <p id="src"></p>
+</header>
+<div class="ctl">
+  <span class="seg" id="dt"><button data-v="wk" class="on">평일(화~목)</button><button data-v="we">주말(토·일)</button></span>
+  <label>시간 <input type="range" id="tb" min="0" max="7" value="3"> <span class="tb" id="tbl"></span></label>
+  <label><input type="checkbox" id="onlyGood"> 공간 양호·시간 사각지대만 강조</label>
+</div>
+<div class="wrap">
+  <div id="map"></div>
+  <aside id="side"><p>지도에서 행정동을 누르면 셀 카드가 열립니다.</p><div id="summary"></div></aside>
+</div>
+<script>
+const D = window.CELLS.dongs, META = window.CELLS.meta;
+const ORDER = ["00-05","05-07","07-09","09-12","12-16","16-19","19-22","22-24"];
+document.getElementById("src").textContent = "자료: " + META.source + " · " + META.note;
+let dt = "wk", tb = ORDER[3], onlyGood = false, sel = null;
+const map = L.map("map", {zoomSnap: 0.25}).setView([37.56, 126.98], 11);
+L.tileLayer("https://{s}.basemap.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {attribution: "© OpenStreetMap © CARTO", maxZoom: 16}).addTo(map);
+// 공급 상대수준(p75 대비) 단일 색상 순차 단계: 낮을수록 진함
+const STEPS = [[0.25,"#7a2e00"],[0.4,"#b84a00"],[0.6,"#e07a3a"],[0.8,"#f2b48a"],[1.0,"#fbe3d2"],[99,"#f4f4f2"]];
+const colorOf = r => STEPS.find(s => r < s[0])[1];
+function cellOf(code){ const d = D[code]; return d ? d.c[dt + "|" + tb] : null; }
+function style(f){
+  const code = f.properties.dong, d = D[code], c = cellOf(code);
+  if(!c) return {weight:0.3,color:"#bbb",fillColor:"#eee",fillOpacity:0.6};
+  const hi = c.b && (!onlyGood || d.good);
+  return {weight: hi ? 1.6 : 0.3, color: hi ? "#111" : "#ffffff", fillColor: (onlyGood && !(c.b && d.good)) ? "#f4f4f2" : colorOf(c.rel), fillOpacity: 0.85};
+}
+const layer = L.geoJSON(window.DONGS, {style, onEachFeature:(f,l)=>{
+  l.on("click", ()=>{ sel = f.properties.dong; card(); });
+  l.bindTooltip(()=>{ const d=D[f.properties.dong], c=cellOf(f.properties.dong); return d ? `${d.nm}<br>공급 ${c? Math.round(c.rel*100):"-"}% (p75 대비)${c&&c.b?" · 시간 사각지대":""}` : f.properties.dong; }, {sticky:true});
+}}).addTo(map);
+map.fitBounds(layer.getBounds(), {padding:[10,10]});
+const lg = L.control({position:"topright"});
+lg.onAdd = () => { const div = L.DomUtil.create("div","legend");
+  div.innerHTML = "<b>공급 / 같은 시간대 동 p75</b><br>" + [["<25%",0],["25–40%",1],["40–60%",2],["60–80%",3],["80–100%",4],["≥100%",5]].map(([t,i])=>`<i style="background:${STEPS[i][1]}"></i>${t}`).join("<br>") + "<br><i style='border:2px solid #111;background:none'></i>시간 사각지대 셀"; return div; };
+lg.addTo(map);
+function fmt(x, d=0){ return x==null ? "–" : Number(x).toLocaleString("ko-KR",{maximumFractionDigits:d, minimumFractionDigits:d}); }
+function summary(){
+  let n=0, ng=0, expo=0;
+  for(const [k,d] of Object.entries(D)){ const c=d.c[dt+"|"+tb]; if(c&&c.b){ n++; if(d.good) ng++; expo += c.expo||0; } }
+  document.getElementById("summary").innerHTML = `<h3 style="font-size:14px;margin:12px 0 4px">${dt=="wk"?"평일":"주말"} ${tb}시 전체</h3>
+   <div class="kpi"><div><b>${n}</b><span>시간 사각지대 동</span></div><div><b>${ng}</b><span>그중 공간 양호(800m) 동</span></div>
+   <div style="grid-column:span 2"><b>${fmt(expo)}</b><span>사각지대 셀 공백 노출(생활인구 인원×시간/일)</span></div></div>`;
+}
+function card(){
+  if(!sel){ summary(); return; }
+  const d = D[sel], c = cellOf(sel);
+  const rows = ORDER.map(t => { const x = d.c[dt+"|"+t]; return `<tr${t==tb?' style="background:#fff3ea"':''}><td>${t}</td><td class="n">${fmt(x.bus,0)}</td><td class="n">${fmt(x.sub,1)}</td><td class="n">${Math.round(x.rel*100)}%</td><td>${x.b?'<span class="tag" style="background:#D55E00">사각</span>':''}</td></tr>`; }).join("");
+  const sim = c && c.cng!=null ? `<h4 style="margin:10px 0 2px;font-size:13px">보강 수단 비교(시뮬레이션, 연 tCO₂, +는 순감축)</h4>
+    <table><tr><td>CNG 버스 증회(p75까지)</td><td class="n">${fmt(c.cng,1)}</td></tr>
+    <tr><td>DRT 승합(가정 계수)</td><td class="n">${fmt(c.drt,1)}</td></tr>
+    <tr><td>같은 구 운행 재배분(P2)</td><td class="n">${c.p2!=null?fmt(c.p2,1):"–"}</td></tr>
+    <tr><td>전기버스 순감축 조건(전력 소비)</td><td class="n">${fmt(c.be,3)} kWh/km 이하</td></tr></table>` : `<p class="note">이 셀은 시간 사각지대가 아니어서 보강 시뮬레이션 대상이 아닙니다.</p>`;
+  document.getElementById("side").innerHTML = `<h2 style="font-size:16px;margin:0">${d.nm}</h2>
+   <div style="font-size:12px;color:#666">800m 피복률 ${Math.round(d.cov*100)}% · ${d.good?"공간 양호":"공간 불량"} · 65세 이상 ${fmt(d.old*100,1)}% · 주민 ${fmt(d.pop)}명</div>
+   <div class="kpi"><div><b>${c?fmt(c.expo):"–"}</b><span>공백 노출(인원×시간/일, ${dt=="wk"?"평일":"주말"} ${tb})</span></div>
+   <div><b>${c?Math.round(c.rel*100)+"%":"–"}</b><span>공급(같은 시간대 동 p75 대비)</span></div>
+   <div><b>${c?fmt(c.trips):"–"}</b><span>출발 통행(4수단, 일)</span></div><div><b>${c?fmt(c.ex,1):"–"}</b><span>연관 추가 차량 통행(인/일, 심야·새벽만)</span></div></div>
+   <table><tr><th>구간</th><th class="n">버스/시</th><th class="n">열차/시</th><th class="n">p75 대비</th><th></th></tr>${rows}</table>
+   ${sim}
+   <p class="note">추가 통행·배출은 연관 기반 추정이며 인과 효과가 아닙니다. 행정동 지표는 생태학적 지표로 개인의 취약성을 뜻하지 않습니다.</p>
+   <div id="summary"></div>`;
+  summary();
+}
+function refresh(){ document.getElementById("tbl").textContent = tb + "시"; layer.setStyle(style); card(); }
+document.querySelectorAll("#dt button").forEach(b => b.onclick = () => { document.querySelectorAll("#dt button").forEach(x=>x.classList.remove("on")); b.classList.add("on"); dt = b.dataset.v; refresh(); });
+document.getElementById("tb").oninput = e => { tb = ORDER[+e.target.value]; refresh(); };
+document.getElementById("onlyGood").onchange = e => { onlyGood = e.target.checked; refresh(); };
+// URL 해시로 상태 지정: #dt=wk&tb=16-19&dong=11500620&good=1 (화면 캡처·공유용)
+const H = new URLSearchParams(location.hash.slice(1));
+if(H.get("dt")){ dt = H.get("dt"); document.querySelectorAll("#dt button").forEach(x=>x.classList.toggle("on", x.dataset.v==dt)); }
+if(H.get("tb") && ORDER.includes(H.get("tb"))){ tb = H.get("tb"); document.getElementById("tb").value = ORDER.indexOf(tb); }
+if(H.get("good")==="1"){ onlyGood = true; document.getElementById("onlyGood").checked = true; }
+if(H.get("dong") && D[H.get("dong")]) sel = H.get("dong");
+refresh();
+</script>
+</body>
+</html>
